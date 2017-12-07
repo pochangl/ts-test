@@ -12,5 +12,6 @@ describe('ClassObject', () => {
     let obj2: B = new B();
     obj2.attr.value = 4;
     expect(obj1.attr.value).to.eql(3);
+    expect(obj2.attr.value).to.eql(4);
   });
 });

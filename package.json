@@ -12,7 +12,7 @@
     "build": "rm -rf ./build && tsc -p config/tsconfig-src.json",
     "lint": "tslint src/**/*.ts",
     "pretest": "yarn run lint && rm -rf ./test && tsc -p config/tsconfig-test.json",
-    "test": "find -name ./src/*.spec.js | xargs mocha",
+    "test": "find -name ./src/*.spec.ts | xargs mocha",
     "posttest": "rm -rf ./test",
     "document": "rm -rf ./doc && typedoc --tsconfig config/tsconfig-src.json --out ./docs ./src/ && touch ./docs/.nojekyll"
   },
