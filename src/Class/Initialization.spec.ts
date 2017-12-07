@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-describe('ClassObject', () => {
+describe('Class initialization', () => {
   class A {
     public value: number = 3;
   }
